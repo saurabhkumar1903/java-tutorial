@@ -2,6 +2,7 @@ package collectortutorial;
 
 import java.util.Arrays;
 import java.util.DoubleSummaryStatistics;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -67,6 +68,14 @@ public class Driver {
 		 * 
 		 */
 		System.out.println(sumStream(Arrays.asList(1,2,3,4,5)));
+		Iterator<Employee> iterator=employees.iterator();
+		while(iterator.hasNext())
+		{
+			Employee temp=iterator.next();
+			employees.remove(temp);
+		}
+		
+//		map.entrySet().stream().filter(k->map.get(k)%2==0).
 		
 	}
 	
