@@ -37,7 +37,7 @@ public class Driver {
 		System.out.println(mapOfSalary);
 
 		// collect(joining())
-		//String joinedDept = null;
+		// String joinedDept = null;
 		final Map<String, String> dept = employees.stream()
 				.collect(Collectors.toMap(e -> "dept", emp -> emp.getDepartment(), (d1, d2) -> d1 + "," + d2));
 		System.out.println(dept.get("dept"));
@@ -56,31 +56,33 @@ public class Driver {
 		final Map<Integer, Set<String>> empDeptLength = employees.stream().map(emp -> emp.getDepartment())
 				.collect(Collectors.groupingBy(String::length, Collectors.toSet()));
 		System.out.println(empDeptLength);
-		
-		final Map<String,Set<Employee>> map=employees.stream().collect(Collectors.groupingBy(emp->emp.getDepartment(),Collectors.toSet()));
+
+		final Map<String, Set<Employee>> map = employees.stream()
+				.collect(Collectors.groupingBy(emp -> emp.getDepartment(), Collectors.toSet()));
 		System.out.println(map);
-	
-		/*.collect(Collectors.groupingBy(makercheckerData -> new MakerCheckerDTO(makercheckerData.getAuthority(),
-		makercheckerData.getAuthorityTypeId(), makercheckerData.getVisibility(),
-		makercheckerData.getOrgId(), makercheckerData.getCreatedBy(), makercheckerData.getCreationTs()),
-		Collectors.groupingBy(makercheckerData -> makercheckerData.getGroup())))
-		//
+
+		/*
+		 * .collect(Collectors.groupingBy(makercheckerData -> new
+		 * MakerCheckerDTO(makercheckerData.getAuthority(),
+		 * makercheckerData.getAuthorityTypeId(), makercheckerData.getVisibility(),
+		 * makercheckerData.getOrgId(), makercheckerData.getCreatedBy(),
+		 * makercheckerData.getCreationTs()), Collectors.groupingBy(makercheckerData ->
+		 * makercheckerData.getGroup()))) //
 		 * 
 		 */
-		System.out.println(sumStream(Arrays.asList(1,2,3,4,5)));
-		Iterator<Employee> iterator=employees.iterator();
-		while(iterator.hasNext())
-		{
-			Employee temp=iterator.next();
+		System.out.println(sumStream(Arrays.asList(1, 2, 3, 4, 5)));
+		Iterator<Employee> iterator = employees.iterator();
+		while (iterator.hasNext()) {
+			Employee temp = iterator.next();
 			employees.remove(temp);
 		}
-		
-//		map.entrySet().stream().filter(k->map.get(k)%2==0).
-		
+
+		System.out.println(sumStream(Arrays.asList(1, 2, 3, 4, 5)));
+
 	}
-	
+
 	private static int sumStream(List<Integer> list) {
-		return list.stream().filter(i -> i > 10).reduce(1, (a,b)->a+b);
+		return list.stream().filter(i -> i > 10).reduce(1, (a, b) -> a + b);
 	}
 
 }
