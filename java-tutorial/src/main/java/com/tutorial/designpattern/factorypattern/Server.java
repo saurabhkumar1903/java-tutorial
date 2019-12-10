@@ -1,11 +1,11 @@
-package factorypattern;
+package com.tutorial.designpattern.factorypattern;
 
-public class Pc extends Computer {
+public class Server extends Computer {
 	private String ram;
 	private String graphics;
 	private String hdd;
 
-	public Pc(String ram, String graphics, String hdd) {
+	public Server(String ram, String graphics, String hdd) {
 
 		this.ram = ram;
 		this.graphics = graphics;
@@ -29,4 +29,8 @@ public class Pc extends Computer {
 		// TODO Auto-generated method stub
 		return this.hdd;
 	}
+
 }
+	
+
+

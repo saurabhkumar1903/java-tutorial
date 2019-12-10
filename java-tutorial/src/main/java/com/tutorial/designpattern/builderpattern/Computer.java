@@ -1,4 +1,4 @@
-package builderpattern;
+package com.tutorial.designpattern.builderpattern;
 
 public class Computer {
 

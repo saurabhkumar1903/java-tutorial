@@ -1,4 +1,4 @@
-package factorypattern;
+package com.tutorial.designpattern.factorypattern;
 
 public abstract class Computer {
 	public abstract String getRam();

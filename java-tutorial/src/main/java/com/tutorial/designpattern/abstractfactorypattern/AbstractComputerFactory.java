@@ -1,4 +1,4 @@
-package abstractfactorypattern;
+package com.tutorial.designpattern.abstractfactorypattern;
 
 public interface AbstractComputerFactory {
 	

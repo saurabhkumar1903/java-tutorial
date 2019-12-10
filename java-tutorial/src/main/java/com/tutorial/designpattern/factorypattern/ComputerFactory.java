@@ -1,4 +1,4 @@
-package factorypattern;
+package com.tutorial.designpattern.factorypattern;
 
 public class ComputerFactory {
 	
