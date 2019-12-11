@@ -1,4 +1,4 @@
-package com.base64;
+package com.tutorial.base64;
 
 import java.util.Base64;
 

@@ -1,6 +1,7 @@
-package collectortutorial;
+package com.tutorial.collectortutorial;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.DoubleSummaryStatistics;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -24,6 +25,10 @@ public class Driver {
 		final List<Employee> result = employees.stream().collect(Collectors.toCollection(LinkedList::new));
 		result.forEach(System.out::println);
 		System.out.println(result.getClass());
+		
+		Collections.sort(result,new EmployeeSalaryComparator().thenComparing(new EmployeeDeptComparator()));
+		for(Employee e:result)
+		System.out.println(e);
 
 		// map to print employee group by department
 		final Map<String, String> result2 = employees.stream().collect(
@@ -49,7 +54,7 @@ public class Driver {
 		System.out.println(resultOfSummary);
 
 		// Collectors.maxBy()/minBy()
-		final Optional<Employee> e = employees.stream().collect(Collectors.minBy(new EmployeeComparator()));
+		final Optional<Employee> e = employees.stream().collect(Collectors.minBy(new EmployeeDeptComparator()));
 		e.ifPresent(System.out::println);
 
 		// Collectors.groupingBy()

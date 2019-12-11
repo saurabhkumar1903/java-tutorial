@@ -1,4 +1,4 @@
-package collectortutorial;
+package com.tutorial.collectortutorial;
 
 public class People {
 	private String name;

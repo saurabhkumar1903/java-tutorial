@@ -1,4 +1,4 @@
-package com.generics.tutorial;
+package com.tutorial.generics;
 
 public class GenericInterfaceTester {
 	public static void main(String[] args) {

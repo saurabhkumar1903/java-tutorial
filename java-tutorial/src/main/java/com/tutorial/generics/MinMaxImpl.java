@@ -1,4 +1,4 @@
-package com.generics.tutorial;
+package com.tutorial.generics;
 
 public class MinMaxImpl<T extends Comparable<T>> implements MinMax<T> {
 	T[] vals;

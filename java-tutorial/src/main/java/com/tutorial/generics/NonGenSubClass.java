@@ -1,4 +1,4 @@
-package com.generics.tutorial;
+package com.tutorial.generics;
 
 public class NonGenSubClass<T extends Number, V> extends Generic<T> {
 	private final T[] ts;

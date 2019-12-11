@@ -1,4 +1,4 @@
-package com.io.tutorial;
+package com.tutorial.io;
 
 import java.util.Scanner;
 

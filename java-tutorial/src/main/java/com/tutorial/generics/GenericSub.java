@@ -1,4 +1,4 @@
-package com.generics.tutorial;
+package com.tutorial.generics;
 
 public class GenericSub<T extends Number> {
 

@@ -1,4 +1,4 @@
-package collectortutorial;
+package com.tutorial.collectortutorial;
 
 class Employee {
 	private String empId;
