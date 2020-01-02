@@ -1,6 +1,10 @@
 package com.tutorial.core;
 
 public interface Interface2 {
-	public void foo();
+	public default void foo() {
+		System.out.println("hello");
+	}
+
+	public void baz();
 
 }

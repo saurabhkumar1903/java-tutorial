@@ -9,5 +9,10 @@ public class Interface1Impl implements Interface1{
 	public void see() {
 		System.out.println("loook pinochio I am a living boy");
 	}
+	@Override
+	public void baz() {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

@@ -39,4 +39,10 @@ System.out.println("hello from impl");
 		Collection collection=new LinkedList<>();
 	}
 
+	@Override
+	public void baz() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
