@@ -6,5 +6,9 @@ public interface Interface2 {
 	}
 
 	public void baz();
+	
+	public static void main(String[] args) {
+		System.out.println("main in interface");
+	}
 
 }

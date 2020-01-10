@@ -7,12 +7,12 @@ public interface Interface1 extends Interface2 {
 	
 	public static void main(String[] args) {
 		Interface2 interface2 = null;
-		Parent p=new Parent();
+		TestParentAndChild p=new TestParentAndChild();
 		
 		System.out.println("hello");
 		System.out.println(interface2 instanceof Interface2);
 
-		System.out.println(p instanceof Parent);
+		System.out.println(p instanceof TestParentAndChild);
 	}
 
 }
